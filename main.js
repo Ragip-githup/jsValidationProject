@@ -34,6 +34,7 @@ myForm.addEventListener("submit", function (event) {
     usernameError.innerText = "Email Formatı Yanlış";
     usernameError.style.visibility = "visible";
     username.focus();
+    username.value = "";
     return false;
   }
 
@@ -46,6 +47,7 @@ myForm.addEventListener("submit", function (event) {
   if (password.value.length < 4) {
     passwordError.innerText = "Password Minimum 4 Karakter Olmalıdır";
     passwordError.style.visibility = "visible";
+    password.value = "";
     password.focus();
     return false;
   }
