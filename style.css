@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  border: none;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container form {
+  width: 70%;
+  height: 40%;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem 1px gray;
+}
+
+.formRow {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formLabel {
+  flex: 1;
+}
+.formInput {
+  border: 1px solid grey;
+  padding: 4px 10px;
+  border-radius: 5px;
+  flex: 2;
+  font-size: 1rem;
+  caret-color: #00bcd4;
+}
+.formInput:focus {
+  border-color: #00bcd4;
+  outline: none;
+}
+
+#inputIconContainer {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: #00bcd4;
+}
+.formBtnContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.formBtnContainer button {
+  border-radius: 5px;
+  width: 40%;
+  margin-left: 1rem;
+  padding: 0.2rem;
+  font-size: 1rem;
+  background-color: #00bcd4;
+  cursor: pointer;
+  border: 2px solid #00bcd4;
+  color: white;
+  transition: color 0.5s linear, bacground-color 0.5s linear;
+}
+
+.formBtnContainer button:hover {
+  background-color: white;
+  color: #00bcd4;
+  transition: all 0.5s linear;
+}
+
+.errorMessage {
+  font-size: 0.7rem;
+  margin-top: 5px;
+  color: sienna;
+  visibility: hidden;
+}
+
+.home{
+  display: flex;
+  
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.home>h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: sienna;
+  font-size: 3rem;
+
+}
